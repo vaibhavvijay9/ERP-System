@@ -1,0 +1,170 @@
+/*
+SQLyog Enterprise - MySQL GUI v7.02 
+MySQL - 5.0.67-community-nt : Database - erpsystem
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`erpsystem` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `erpsystem`;
+
+/*Table structure for table `admin` */
+
+DROP TABLE IF EXISTS `admin`;
+
+CREATE TABLE `admin` (
+  `adminid` varchar(30) NOT NULL,
+  `name` varchar(30) default NULL,
+  `mobile` varchar(30) default NULL,
+  `email` varchar(30) default NULL,
+  `usertype` varchar(30) default NULL,
+  `username` varchar(30) default NULL,
+  PRIMARY KEY  (`adminid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `admin` */
+
+insert  into `admin`(`adminid`,`name`,`mobile`,`email`,`usertype`,`username`) values ('1','ajay kumar','8597463214','ajay.admin@gmail.com','Admin','ajay123');
+
+/*Table structure for table `attendance` */
+
+DROP TABLE IF EXISTS `attendance`;
+
+CREATE TABLE `attendance` (
+  `rollno` varchar(20) default NULL,
+  `year` varchar(10) default NULL,
+  `branch` varchar(30) default NULL,
+  `section` varchar(10) default NULL,
+  `date` varchar(15) default NULL,
+  `sid` varchar(5) default NULL,
+  `attendance` varchar(5) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `attendance` */
+
+insert  into `attendance`(`rollno`,`year`,`branch`,`section`,`date`,`sid`,`attendance`) values ('14ESKCS075','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS076','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS077','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS078','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS080','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS085','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS087','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS101','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS105','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS118','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS119','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS120','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS123','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS124','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS125','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS205','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS300','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS075','3','Computer Science','B','2017-04-03','1','0'),('14ESKCS076','3','Computer Science','B','2017-04-03','1','1'),('14ESKCS077','3','Computer Science','B','2017-04-03','1','1'),('14ESKCS078','3','Computer Science','B','2017-04-03','1','1'),('14ESKCS080','3','Computer Science','B','2017-04-03','1','1'),('14ESKCS085','3','Computer Science','B','2017-04-03','1','0'),('14ESKCS087','3','Computer Science','B','2017-04-03','1','1'),('14ESKCS101','3','Computer Science','B','2017-04-03','1','0'),('14ESKCS105','3','Computer Science','B','2017-04-03','1','0'),('14ESKCS118','3','Computer Science','B','2017-04-03','1','1'),('14ESKCS119','3','Computer Science','B','2017-04-03','1','1'),('14ESKCS120','3','Computer Science','B','2017-04-03','1','1'),('14ESKCS123','3','Computer Science','B','2017-04-03','1','1'),('14ESKCS124','3','Computer Science','B','2017-04-03','1','0'),('14ESKCS125','3','Computer Science','B','2017-04-03','1','0'),('14ESKCS205','3','Computer Science','B','2017-04-03','1','1'),('14ESKCS300','3','Computer Science','B','2017-04-03','1','1'),('14ESKCS075','3','Computer Science','B','2017-04-03','4','0'),('14ESKCS076','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS077','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS078','3','Computer Science','B','2017-04-03','4','0'),('14ESKCS080','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS085','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS087','3','Computer Science','B','2017-04-03','4','0'),('14ESKCS101','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS105','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS118','3','Computer Science','B','2017-04-03','4','0'),('14ESKCS119','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS120','3','Computer Science','B','2017-04-03','4','0'),('14ESKCS123','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS124','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS125','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS205','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS300','3','Computer Science','B','2017-04-03','4','1'),('14ESKCS075','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS076','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS077','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS078','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS080','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS085','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS087','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS101','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS105','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS118','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS119','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS120','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS123','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS124','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS125','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS205','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS300','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS075','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS076','3','Computer Science','B','2017-04-03','5','0'),('14ESKCS077','3','Computer Science','B','2017-04-03','5','0'),('14ESKCS078','3','Computer Science','B','2017-04-03','5','0'),('14ESKCS080','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS085','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS087','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS101','3','Computer Science','B','2017-04-03','5','0'),('14ESKCS105','3','Computer Science','B','2017-04-03','5','0'),('14ESKCS118','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS119','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS120','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS123','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS124','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS125','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS205','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS300','3','Computer Science','B','2017-04-03','5','1'),('14ESKCS075','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS076','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS077','3','Computer Science','B','2017-04-03','3','0'),('14ESKCS078','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS080','3','Computer Science','B','2017-04-03','3','0'),('14ESKCS085','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS087','3','Computer Science','B','2017-04-03','3','0'),('14ESKCS101','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS105','3','Computer Science','B','2017-04-03','3','0'),('14ESKCS118','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS119','3','Computer Science','B','2017-04-03','3','0'),('14ESKCS120','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS123','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS124','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS125','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS205','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS300','3','Computer Science','B','2017-04-03','3','1'),('14ESKCS075','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS076','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS077','3','Computer Science','B','2017-04-03','6','0'),('14ESKCS078','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS080','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS085','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS087','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS101','3','Computer Science','B','2017-04-03','6','0'),('14ESKCS105','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS118','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS119','3','Computer Science','B','2017-04-03','6','0'),('14ESKCS120','3','Computer Science','B','2017-04-03','6','0'),('14ESKCS123','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS124','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS125','3','Computer Science','B','2017-04-03','6','0'),('14ESKCS205','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS300','3','Computer Science','B','2017-04-03','6','1'),('14ESKCS075','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS076','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS077','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS078','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS080','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS085','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS087','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS101','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS105','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS118','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS119','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS120','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS123','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS124','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS125','3','Computer Science','B','2017-04-03','2','0'),('14ESKCS205','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS300','3','Computer Science','B','2017-04-03','2','1'),('14ESKCS075','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS076','3','Computer Science','B','2017-04-10','5','0'),('14ESKCS077','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS078','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS080','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS085','3','Computer Science','B','2017-04-10','5','0'),('14ESKCS087','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS101','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS105','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS118','3','Computer Science','B','2017-04-10','5','0'),('14ESKCS119','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS120','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS123','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS124','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS125','3','Computer Science','B','2017-04-10','5','0'),('14ESKCS205','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS300','3','Computer Science','B','2017-04-10','5','1'),('14ESKCS075','3','Computer Science','B','2017-06-15','2','0'),('14ESKCS076','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS077','3','Computer Science','B','2017-06-15','2','0'),('14ESKCS078','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS080','3','Computer Science','B','2017-06-15','2','0'),('14ESKCS085','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS087','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS101','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS105','3','Computer Science','B','2017-06-15','2','0'),('14ESKCS118','3','Computer Science','B','2017-06-15','2','0'),('14ESKCS119','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS120','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS123','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS124','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS125','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS205','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS300','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS075','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS076','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS077','3','Computer Science','B','2017-06-15','1','0'),('14ESKCS078','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS080','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS085','3','Computer Science','B','2017-06-15','1','0'),('14ESKCS087','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS101','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS105','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS118','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS119','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS120','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS123','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS124','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS125','3','Computer Science','B','2017-06-15','1','0'),('14ESKCS205','3','Computer Science','B','2017-06-15','1','1'),('14ESKCS300','3','Computer Science','B','2017-06-15','1','0'),('14ESKCS075','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS076','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS077','3','Computer Science','B','2017-06-15','5','0'),('14ESKCS078','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS080','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS085','3','Computer Science','B','2017-06-15','5','0'),('14ESKCS087','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS101','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS105','3','Computer Science','B','2017-06-15','5','0'),('14ESKCS118','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS119','3','Computer Science','B','2017-06-15','5','0'),('14ESKCS120','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS123','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS124','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS125','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS205','3','Computer Science','B','2017-06-15','5','0'),('14ESKCS300','3','Computer Science','B','2017-06-15','5','1'),('14ESKCS075','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS076','3','Computer Science','B','2017-06-15','2','0'),('14ESKCS077','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS078','3','Computer Science','B','2017-06-15','2','0'),('14ESKCS080','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS085','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS087','3','Computer Science','B','2017-06-15','2','0'),('14ESKCS101','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS105','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS118','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS119','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS120','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS123','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS124','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS125','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS205','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS300','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS075','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS076','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS077','3','Computer Science','B','2017-06-15','2','0'),('14ESKCS078','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS080','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS085','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS087','3','Computer Science','B','2017-06-15','2','0'),('14ESKCS101','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS105','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS118','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS119','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS120','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS123','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS124','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS125','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS205','3','Computer Science','B','2017-06-15','2','1'),('14ESKCS300','3','Computer Science','B','2017-06-15','2','0');
+
+/*Table structure for table `faculty` */
+
+DROP TABLE IF EXISTS `faculty`;
+
+CREATE TABLE `faculty` (
+  `facultyid` int(30) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `subject` varchar(30) NOT NULL,
+  `mobile` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `usertype` varchar(30) NOT NULL,
+  `username` varchar(30) default NULL,
+  PRIMARY KEY  (`facultyid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `faculty` */
+
+insert  into `faculty`(`facultyid`,`name`,`subject`,`mobile`,`email`,`usertype`,`username`) values (1,'Sunil Dhankar','OS','8547145987','sunildhankar@gmail.com','Faculty','sunil123'),(2,'Sushila Vishnoi','ADS','7894552227','sushilavishnoi@gmail.com','Faculty','sushila123'),(3,'Kajal Mathur','CA','8529634587','kajalmathur@gmail.com','Faculty','kajal123'),(4,'Sarabjeet Singh','DLD','8574985624','sarabjeetsingh@gmail.com','Faculty','sarabjeet123'),(5,'Nikita Singhal','DBMS','8574961235','nikitasinghal@gmail.com','Faculty','nikita123'),(6,'Ruchika Jain','TEF','8745129635','ruchikajain@gmail.com','Faculty','ruchika123');
+
+/*Table structure for table `holidays` */
+
+DROP TABLE IF EXISTS `holidays`;
+
+CREATE TABLE `holidays` (
+  `from_date` varchar(15) default NULL,
+  `to_date` varchar(15) default NULL,
+  `event` varchar(100) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `holidays` */
+
+insert  into `holidays`(`from_date`,`to_date`,`event`) values ('01/01/2016','01/01/2016','New Year'),('15/01/2016','15/01/2016','Kite Festival'),('26/01/2016','26/01/2016','Republic Day'),('07/03/2016','07/03/2016','Mahashivratri'),('15/04/2016','15/04/2016','Ram Navmi'),('15/08/2016','15/08/2016','Independance Day'),('18/08/2016','18/08/2016','Raksha Bandhan'),('25/08/2016','25/08/2016','Sri Krishna Janmashtami'),('02/10/2016','02/10/2016','Gandhi Jayanti'),('27/10/2016','06/11/2016','Autumn Break');
+
+/*Table structure for table `login` */
+
+DROP TABLE IF EXISTS `login`;
+
+CREATE TABLE `login` (
+  `username` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `usertype` varchar(30) NOT NULL,
+  PRIMARY KEY  (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `login` */
+
+insert  into `login`(`username`,`password`,`usertype`) values ('ajay123','ajay123','Admin'),('kajal123','kajal123','Faculty'),('nikita123','nikita123','Faculty'),('pankaj123','pankaj123','Student'),('rahul123','rahul123','Student'),('raunak123','raunak123','Student'),('rishav123','rishav123','Student'),('ritik123','ritik123','Student'),('ritvik123','ritvik123','Student'),('ruchika123','ruchika123','Faculty'),('rupesh123','rupesh123','Student'),('sachin123','sachin123','Student'),('sagar123','sagar123','Student'),('sarabjeet123','sarabjeet123','Faculty'),('shubham123','shubham123','Student'),('sohail123','sohail123','Student'),('sunil123','sunil123','Faculty'),('sushila123','sushila123','Faculty'),('vaibhav123','vaibhav123','Student'),('varun123','varun123','Student'),('vatsal123','vatsal123','Student'),('vikash123','vikash123','Student'),('vinit123','vinit123','Student'),('virendra123','virendra123','Student');
+
+/*Table structure for table `notice` */
+
+DROP TABLE IF EXISTS `notice`;
+
+CREATE TABLE `notice` (
+  `title` varchar(100) default NULL,
+  `content` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `notice` */
+
+insert  into `notice`(`title`,`content`) values ('25/09/2016-read me by adobe','1. Disable Internet connection.\n\n2. Make sure you do not have any of the following entries in your hosts file.\n\n   127.0.0.1 lmlicenses.wip4.adobe.com\n   127.0.0.1 lm.licenses.adobe.com\n\n3. Install Adobe After Effects CC 2015. [Follow the Images in Installation Screenshots folder]\n\n\n4. After Installation. Launch After Effects as Trial. [Its Important]\n\n\n5. Close After Effects.\n\n\n6. Copy the file \"amtlib.dll\" from Crack folder to following directory. [C:\\Program Files\\Adobe\\Adobe After Effects CC 2015\\Support Files\\]\n\n\n7. Block the program in your firewall and add the following lines to your hosts file.\n\n127.0.0.1 lmlicenses.wip4.adobe.com\n127.0.0.1 lm.licenses.adobe.com\n127.0.0.1 na1r.services.adobe.com\n127.0.0.1 hlrcv.stage.adobe.com\n127.0.0.1 practivate.adobe.com \n127.0.0.1 activate.adobe.com\n\n\n8. Run the program & Enjoy...!!!\n\nNOTE: Hosts file is located in C:\\Windows\\System32\\drivers\\etc\\\n\n#######################################################################################################################\n\n'),('02/11/2016-note','\n1. Disable Internet connection.\n\n2. Make sure you do not have any of the following entries in your hosts file.\n\n   127.0.0.1 lmlicenses.wip4.adobe.com\n   127.0.0.1 lm.licenses.adobe.com\n\n3. Install Adobe After Effects CC 2015. [Follow the Images in Installation Screenshots folder]\n\n\n4. After Installation. Launch After Effects as Trial. [Its Important]\n\n\n5. Close After Effects.\n\n\n6. Copy the file \"amtlib.dll\" from Crack folder to following directory. [C:\\Program Files\\Adobe\\Adobe After Effects CC 2015\\Support Files\\]\n\n\n7. Block the program in your firewall and add the following lines to your hosts file.\n\n127.0.0.1 lmlicenses.wip4.adobe.com\n127.0.0.1 lm.licenses.adobe.com\n127.0.0.1 na1r.services.adobe.com\n127.0.0.1 hlrcv.stage.adobe.com\n127.0.0.1 practivate.adobe.com \n127.0.0.1 activate.adobe.com\n\n\n8. Run the program & Enjoy...!!!\n\nNOTE: Hosts file is located in C:\\Windows\\System32\\drivers\\etc\\\n\n#######################################################################################################################\n\n'),('26/09/2016-risha','Q1. What is database?\nQuresh vfdfdfdgfdgdfg\nQ2. Why oxygen is necessary?\nfdgfdgdghdghg\nQ3. Explain the types of data.\ndfghdhfjghhdghdjdf\nQ4. What is cup?\ndfghdhfjghhdghdjdf\nQ5. How are you?\ndfghdhfjghhdghdjdf\nQ6. What is your age?\ndfmhghgfdghgghjggfdfd\nQ7. Where do you live?\ndfmhghgfdghgghjggfdfd\nQ8. What are your hobbies?\ndfmhghgfdghgghjggfdfd\nQ9. What is cyclone?\ndbgfgfhfxgg\nQ10. Why are clouds black?\ndbgfgfhfxgg\nQ11. Why sky is blue?\ndbgfgfhfxgg\n'),('03/10/2016-nilesh','Q1. What is database?\nQuresh vfdfdfdgfdgdfg\nQ2. Why oxygen is necessary?\nfdgfdgdghdghg\nQ3. Explain the types of data.\ndfghdhfjghhdghdjdf\nQ4. What is cup?\ndfghdhfjghhdghdjdf\nQ5. How are you?\ndfghdhfjghhdghdjdf\nQ6. What is your age?\ndfmhghgfdghgghjggfdfd\nQ7. Where do you live?\ndfmhghgfdghgghjggfdfd\nQ8. What are your hobbies?\ndfmhghgfdghgghjggfdfd\nQ9. What is cyclone?\ndbgfgfhfxgg\nQ10. Why are clouds black?\ndbgfgfhfxgg\nQ11. Why sky is blue?\ndbgfgfhfxgg\n'),('15/06/2017-pankaj','Q1.	What do you know about Java?\nQ2.	What are the supported platforms by Java Programming Language?\nQ3.	List any five features of Java?\nQ4.	Why is Java Architectural Neutral?\nQ5.	What is a singleton class? Give a practical example of its usage.\nQ6.	What are the access modifiers in Java?\nQ7.	What is are packages?\nQ8.	What is meant by Inheritance and what are its advantages?\nQ9.	What is the difference between superclass and subclass?\nQ10. What is an abstract class?\nQ11. What are the states associated in the thread?\nQ12. What is synchronization?\nQ13. What is deadlock?\nQ14. What is an applet?\nQ15. What is the lifecycle of an applet?\nQ16. What is a layout manager and what are different types of layout managers available in java AWT?\nQ17. What is JDBC?\nQ18. What is the Java API?\nQ19. Why there are no global variables in Java?\nQ20. What are Encapsulation, Inheritance and Polymorphism?\nQ21. What is the use of bin and lib in JDK?\nQ22. What is method overloading and method overriding?\nQ23. What is the difference between this() and super()?\nQ24. What is Domain Naming Service(DNS)?\nQ25. What are checked exceptions?\nQ26. What are runtime exceptions?\nQ27. What is the difference between error and an exception?\nQ28. What is mutable object and immutable object?\nQ29. What is the purpose of Void class?\nQ30. What is nested class?\nQ31. What are different types of access modifiers?\nQ32. What is the difference between Reader/Writer and InputStream/Output Stream?\nQ33. What is servlet?\nQ34. What is Constructor?\nQ35. What is an Iterator ?\nQ36. What is the difference between the prefix and postfix forms of the ++ operator?\nQ37. What is the difference between a constructor and a method?\nQ38. What is the purpose of apache tomcat?\nQ39. Briefly explain daemon thread.\nQ40. What is UNICODE?\nQ41. Can a constructor have different name than a Class name in Java?\nQ42. What will be the output of Round(3.7) and Ceil(3.7)?\nQ43. Can we use goto in Java to go to a particular line?\nQ44. Which object oriented Concept is achieved by using overloading and overriding?\nQ45. Is it possible to define a method in Java class but provide it’s implementation in the code of another language like C?\nQ46. Can a variable be local and static at the same time?\nQ47. In a class implementing an interface, can we change the value of any variable defined in the interface?\nQ48. Is it correct to say that due to garbage collection feature in Java, a java program never goes out of memory?\nQ49. Can we have any other return type than void for main method?\nQ50. In Java thread programming, which method is a must implementation for all threads?\nQ51. Can an Interface extend another Interface?\nQ52. How objects are stored in Java?\nQ53. What happens if an exception is not handled in a program?\nQ54. I have multiple constructors defined in a class. Is it possible to call a constructor from another constructor’s body?\nQ55. What’s meant by anonymous class?\nQ56. Is there a way to increase the size of an array after its declaration?\nQ57. If an application has multiple classes in it, is it okay to have a main method in more than one class?\nQ58. What is a Local class in Java?\nQ59. String and StringBuffer both represent String objects. Can we compare String and StringBuffer in Java?\nQ60. Can we cast any other type to Boolean Type with type casting?\n\n\nQ61. Design a GUI application in which the user enters a number in the text field and on\nclicking the button the sum of the digits of the number should be displayed in a\nlabel.\nHint : Suppose user enters 123 the output should be 6(1+2+3).\nQ62. Design a GUI application to accept a String from the user in a text field and print\nusing option pane whether it is a palindrome or not.\nHint ABBA is a palindrome.\nQ63. Design a GUI application to accept the cost price and selling price form the user in\ntwo text fields then calculate the profit or loss incurred.\nQ64. Design a GUI application to accept a character in a text field and print in a label if\nthat character is a vowel: a, e, i, o, or u. The application should be case sensitive.\nQ65. Design a GUI application that repeatedly accepts numbers in a option pane and once\nthe typed number is 0 the maximum and minimum of all numbers typed are\ndisplayed.\nQ66. Design a GUI application in java to convert temperature from Celsius to Fahrenheit\nor vice versa using radio buttons and two text fields\nQ67. Design a GUI application in java to convert kilograms into grams, litres into\nmilliliters, rupees into paisa using combobox and text fields.\nQ68. A book publishing house decided to go in for computerization. The database will be\nmaintained at the back end but you have to design the front end for the company.\nYou have to accept book code, Title, Author and Quantity sold from the user. The\nPrice will be generated depending upon the book code. Net price should be\ncalculated on the basis of the discount given.\nBookseller - 25%\nSchool - 20%\nCustomer - 5%\nQ69. Create a GUI application to accept a string and display it in reverse order using the\nsubstring() method.\nQ70. Create a GUI application to create random whole numbers between 2 float numbers\ninput by the user.\nQ71. Create a GUI application to accept 3 numbers in separate text fields and display\ntheir sum, average, maximum or minimum after rounding the results on the click of\nappropriate buttons (There are four separate buttons - one for sum, one for\naverage, one for maximum and one for minimum). The result should be displayed in\nthe fourth text field.\nQ72. Create a GUI application to accept the date (as 1), month (as a number like 3 for\nMarch) and year (as 2010) in separate text fields and display the date in the format:\ndd/mm/yy. Take care of the following points while creating the application:\nVerify the date input before displaying it in the suggested format and display\nerror messages wherever applicable\nThe date is accepted as 1 (for the first of any month) but should be displayed as\n01 in the final format.\nThe year is accepted as 2010 but displayed as 10 in the final format.\nQ73. Create an application to accept two strings - First Name and Last name from the user\nand display the message Welcome with the complete name of the user.\nQ74. Create an application to accept the radius of a circle, calculate the area and\ncircumference and display the results in a message box after rounding off the area\nand circumference to an integer number.\nQ75. Modify application to make sure that the user has not input the complete name in\nthe first name text field.\nQ76. Modify the Case Changer application developed in the lesson to display the input\ntext in Title case using the substring(), toLowerCase() and toUpperCase() methods.\n');
+
+/*Table structure for table `schedule` */
+
+DROP TABLE IF EXISTS `schedule`;
+
+CREATE TABLE `schedule` (
+  `year` char(1) default NULL,
+  `branch` varchar(50) default NULL,
+  `section` char(1) default NULL,
+  `Day` varchar(20) default NULL,
+  `8.00-9.00` varchar(30) default NULL,
+  `9.00-10.00` varchar(30) default NULL,
+  `10.00-11.00` varchar(30) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `schedule` */
+
+insert  into `schedule`(`year`,`branch`,`section`,`Day`,`8.00-9.00`,`9.00-10.00`,`10.00-11.00`) values ('3','Computer Science','B','Monday','OS','ADS','DBMS'),('3','Computer Science','B','Tuesday','CA','TEF','DLD'),('3','Computer Science','B','Wednesday','DLD','ADS','OS'),('3','Computer Science','B','Thursday','TEF','OS','CA'),('3','Computer Science','B','Friday','DBMS','ADS','TEF'),('3','Computer Science','B','Saturday','CA','DLD','DBMS');
+
+/*Table structure for table `student` */
+
+DROP TABLE IF EXISTS `student`;
+
+CREATE TABLE `student` (
+  `rollno` varchar(30) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `year` char(1) NOT NULL,
+  `branch` varchar(30) NOT NULL,
+  `section` char(1) NOT NULL,
+  `mobile` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `usertype` varchar(30) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  PRIMARY KEY  (`rollno`),
+  KEY `username` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `student` */
+
+insert  into `student`(`rollno`,`name`,`year`,`branch`,`section`,`mobile`,`email`,`usertype`,`username`) values ('14ESKCS075','rahul','3','Computer Science','B','8457451245','rahul@gmail.com','Student','rahul123'),('14ESKCS076','raunak','3','Computer Science','B','9685741236','raunak@gmail.com','Student','raunak123'),('14ESKCS077','rishav','3','Computer Science','B','7412589637','rishavranjan@gmail.com','Student','rishav123'),('14ESKCS078','ritik','3','Computer Science','B','9865741597','patniritik@gmail.com','Student','ritik123'),('14ESKCS080','ritvik','3','Computer Science','B','8745987532','ritvik@gmail.com','Student','ritvik123'),('14ESKCS085','rupesh','3','Computer Science','B','9876234334','rupeshjoshi@gmail.com','Student','rupesh123'),('14ESKCS087','sachin','3','Computer Science','B','8789876543','sachinchauchan@gmail.com','Student','sachin123'),('14ESKCS101','shubham','3','Computer Science','B','8547963524','shubhampurohit@gmail.com','Student','shubham123'),('14ESKCS105','sohail','3','Computer Science','B','8574125789','sohail.mansoory@gmail.com','Student','sohail123'),('14ESKCS118','vaibhav','3','Computer Science','B','8104410870','vaibhavvijay9@gmail.com','Student','vaibhav123'),('14ESKCS119','varun','3','Computer Science','B','8574698745','varunjain@gmail.com','Student','varun123'),('14ESKCS120','vatsal','3','Computer Science','B','9782326912','lodhavatsal@gmail.com','Student','vatsal123'),('14ESKCS123','vikash','3','Computer Science','B','7222459888','vikash.jangid@gmail.com','Student','vikash123'),('14ESKCS124','vinit','3','Computer Science','B','7458125478','vinit@gmail.com','Student','vinit123'),('14ESKCS125','virendra','3','Computer Science','B','8104754714','virendrasinghal@yahoo.com','Student','virendra123'),('14ESKCS205','sagar','3','Computer Science','B','9487238872','sagarjangid@gmail.com','Student','sagar123'),('14ESKCS300','pankaj','3','Computer Science','B','7737898777','pankajagarwal@gmail.com','Student','pankaj123');
+
+/*Table structure for table `subject` */
+
+DROP TABLE IF EXISTS `subject`;
+
+CREATE TABLE `subject` (
+  `sid` int(5) NOT NULL auto_increment,
+  `sname` varchar(10) NOT NULL,
+  PRIMARY KEY  (`sid`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+/*Data for the table `subject` */
+
+insert  into `subject`(`sid`,`sname`) values (1,'ADS'),(2,'OS'),(3,'CA'),(4,'DBMS'),(5,'DLD'),(6,'TEF');
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
