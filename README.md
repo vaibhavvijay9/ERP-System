@@ -15,7 +15,7 @@ A basic college ERP made using Swings Framework and MySQL as database.
 
 ### Details
 
-#### ..* Login Details
+#### ..*Login Details
 
 **ADMIN:-**
 
@@ -38,7 +38,7 @@ vaibhav123 (username)
 vaibhav123 (password)		(see more users from STUDENT table using admin 'View Tables')
 
 
-#### ..* Other Details
+#### ..*Other Details
 
 **Welcome Page(Main class):-**      "HomePage_Login.java"
 
