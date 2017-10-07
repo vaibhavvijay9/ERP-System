@@ -33,9 +33,9 @@ A basic college ERP made using Swings Framework and MySQL as database.
 
    **Welcome Page(Main class):-**      "HomePage_Login.java"  
 
-   **INSTRUCTIONS:**   (for current database)  
-  1. Mark Attendance Details====>   Year="3" , Branch="Computer Science" , Section="B"
-  2. Roll No.====>14ESKCS118 (OR any from database)  
+   **INSTRUCTIONS:**   (for current database)
+1. Mark Attendance Details====>   Year="3" , Branch="Computer Science" , Section="B"
+2. Roll No.====>14ESKCS118 (OR any from database)  
 
 Project By:  
 Vaibhav Vijay  
