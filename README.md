@@ -1,14 +1,14 @@
 # ERP-System
 A basic college ERP made using Swings Framework and MySQL as database.
 
-### Home Page
+### 1. Home Page
 ![Screenshot](screenshots/screenshot1.png)
 
-### Student Section
+### 2. Student Section
 ![Screenshot](screenshots/screenshot2.png)
 
-### Faculty Section
+### 3. Faculty Section
 ![Screenshot](screenshots/screenshot3.png)
 
-### Admin Section
+### 4. Admin Section
 ![Screenshot](screenshots/screenshot4.png)
